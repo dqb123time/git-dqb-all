@@ -406,7 +406,13 @@ UUID=212e8134-730c-44d0-8583-dd7c3151cd5a /vms/uiscloud ext4 defaults 0 2
 
 
 
-# iscsiadm命令
+
+
+# iSCSI详解 及 iSCSI配置
+
+https://blog.csdn.net/tjiyu/article/details/52811458
+
+## iscsiadm命令
 
 https://blog.51cto.com/xiaocao13140/1931854
 
