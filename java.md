@@ -14,6 +14,10 @@ Constructor >> @Autowired >> @PostConstruct
 
 
 
+### @RequestParam、@QueryParam等Spring常见参数注解区别
+
+https://blog.csdn.net/shipfei_csdn/article/details/103157720
+
 ## 问题
 
 ### 如何在静态方法或非Spring Bean中注入Spring Bean

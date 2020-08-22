@@ -334,7 +334,9 @@ func deepCopy(dst, src interface{}) error {
 }
 ```
 
+## golang通过type定义函数类型
 
+https://blog.csdn.net/zhangxw872196/article/details/103822652
 
 # 加密
 
@@ -514,3 +516,15 @@ func main() {
 # HTTP
 
 Golang之发送http请求，GET、POST  https://juejin.im/post/6844903859312132103
+
+## golang http client 连接池
+
+https://blog.csdn.net/qq_21514303/article/details/87794750
+
+
+
+# 设计模式
+
+## 装饰器模式
+
+https://cloudsjhan.github.io/2019/11/30/golang%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E8%A3%85%E9%A5%B0%E5%99%A8%E6%A8%A1%E5%BC%8F/
