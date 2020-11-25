@@ -162,6 +162,49 @@ public class ServiceContextUtils implements ApplicationListener<ContextRefreshed
 然后直接调用ServiceContextUtils.redisService即可
 ```
 
+# HTTP
+
+## httpReqeuset
+
+request.getRequestURL() 返回全路径
+
+request.getRequestURI() 返回除去host（域名或者ip）部分的路径
+
+request.getContextPath() 返回工程名部分，如果工程映射为/，此处返回则为空
+
+request.getServletPath() 返回除去host和工程名部分的路径
+
+例如：
+request.getRequestURL() http://localhost:8080/jqueryLearn/resources/request.jsp 
+request.getRequestURI() /jqueryLearn/resources/request.jsp
+request.getContextPath()/jqueryLearn 
+request.getServletPath()/resources/request.jsp 
+
+注： resources为WebContext下的目录名 
+   jqueryLearn 为工程名
+
+# java工具
+
+jps:查看正在运行的java进程
+
+jstack：jstack 28477 > test.txt 将jstack信息输出到指定文件
+
+分析线程状态信息
+
+grep java.lang.Thread.State test.txt | awk '{print $2$3$4$5}' | sort | uniq -c
+
+grep java.lang.Thread.State test.txt | awk '{print $2$3$4$5}' | uniq -c
+
+
+
+tomcat:
+
+tomcat“闪退” 进程终止排查-进程退出、解决方案:
+
+https://blog.csdn.net/hatsune_miku_/article/details/73301921?%3E
+
+
+
 # 网站
 
 
@@ -243,3 +286,4 @@ java多线程（十）使用线程安全的集合 https://blog.csdn.net/u0112771
 Java中Set的contains()方法  https://blog.csdn.net/violet_echo_0908/article/details/50152915
 
 图说Java —— 理解Java机制最受欢迎的8幅图 https://blog.csdn.net/renfufei/article/details/13594715
+
