@@ -70,9 +70,33 @@ https://www.jianshu.com/p/843782e454a8 使用 pyVmomi 采集 vSphere 监控指�
 
 
 
-JAVA
+# JAVA
+
+https://blog.csdn.net/u013256816/article/details/49779029使用VMware VSphere WebService SDK进行开发 （一）——基本信息阐述
+
+https://blog.csdn.net/u013256816/article/details/49782109使用VMware VSphere WebService SDK进行开发 （三）——获取主机（HostSystem）的基本信息
+
+https://blog.csdn.net/u013256816/article/details/49782339使用VMware VSphere WebService SDK进行开发 （四）——获取集群（Cluster, ComputeResource）的相关信息
+
+https://developer.aliyun.com/article/238495   使用VMware VSphere WebService SDK进行开发 （五）——根据虚拟机的名称获取对应主机的IP地址
+
+使用VMware VSphere WebService SDK进行开发 （六）——检测告警信息https://developer.aliyun.com/article/238494
+
+
+
+https://honeypps.com/backend/vmware-vsphere-webservice-sdk-basic/   使用VMware VSphere WebService SDK进行开发 （一）——基本信息阐述
 
 https://honeypps.com/backend/vmware-vsphere-webservice-sdk-virtual-cpu/ 使用VMware VSphere WebService SDK进行开发 （二）——获取虚拟机cpu的使用情况
+
+https://honeypps.com/backend/vmware-vsphere-webservice-sdk-host/使用VMware VSphere WebService SDK进行开发 （三）——获取主机（HostSystem）的基本信息
+
+https://honeypps.com/backend/vmware-vsphere-webservice-sdk-cluster/ 使用VMware VSphere WebService SDK进行开发 （四）——获取集群（Cluster, ComputeResource）的相关信息
+
+https://honeypps.com/backend/vmware-vsphere-webservice-sdk-host-name-and-ip/ 使用VMware VSphere WebService SDK进行开发 （五）——根据虚拟机的名称获取对应主机的IP地址
+
+https://honeypps.com/backend/vmware-vsphere-webservice-sdk-warn-info/ 使用VMware VSphere WebService SDK进行开发 （六）——检测告警信息
+
+https://honeypps.com/backend/vmware-vsphere-webservice-sdk-directory/使用VMware VSphere WebService SDK进行开发 （七）——获取数据中心、集群、主机、虚拟机的目录结构
 
 
 
@@ -83,3 +107,9 @@ https://bbs.csdn.net/topics/397175444vmware  vsphere for java 如何获取虚拟
 
 
 **https://www.aboutyun.com/thread-16350-1-1.html  Vmware SDK的使用（原创）**
+
+
+
+**https://blog.csdn.net/zhouxukun123/category_6894589.html vSphere Web Services SDK编程指南**
+
+**https://blog.csdn.net/zhouxukun123/article/details/77141923  VMware vSphere Web Services SDK编程指南（七）- 7.5 清单遍历**
