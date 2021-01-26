@@ -338,6 +338,93 @@ func deepCopy(dst, src interface{}) error {
 
 https://blog.csdn.net/zhangxw872196/article/details/103822652
 
+## 时间操作
+
+https://blog.csdn.net/HYZX_9987/article/details/99947688
+
+### 获取当前时间及其秒、毫秒、纳秒数
+
+```go
+
+now := time.Now() //获取当前时间
+==>2019-08-21 11:30:51.2470317 +0800 CST m=+0.004501101
+fmt.Printf("时间戳（秒）：%v;\n", time.Now().Unix())        //10位
+fmt.Printf("时间戳（纳秒）：%v;\n",time.Now().UnixNano())    //19位
+fmt.Printf("时间戳（毫秒）：%v;\n",time.Now().UnixNano() / 1e6)        //或者秒*1000也可
+fmt.Printf("时间戳（纳秒-->秒）：%v;\n",time.Now().UnixNano() / 1e9)
+```
+
+### 获取指定时间前的时间
+
+```go
+// 获取50秒前的时间，方式1
+st,_ := time.ParseDuration("-50s")
+fmt.Println("50秒前的时间：",time.Now().Add(st))
+ 
+// 获取1分钟前的时间，n秒前则是time.Second * -n，方式2
+t := time.Now().Add(time.Minute * -1) 
+fmt.Println("一分钟前的时间：",t)
+ 
+//获取1小时前的时间
+sth,_ := time.ParseDuration("-1h")
+fmt.Println("1小时前的时间：",time.Now().Add(sth))
+ 
+// 获取2天前的时间
+oldTime := time.Now().AddDate(0, 0, -2)
+ 
+//获取两个月前的时间
+oldTime := time.Now().AddDate(0, -2, 0)
+```
+
+### 获取指定时间后的时间
+
+```go
+// 获取50秒后的时间，方式1
+st,_ := time.ParseDuration("50s")
+fmt.Println("50秒之后的时间：",time.Now().Add(st))
+ 
+// 获取1分钟后的时间，n秒前则是time.Second * n，方式2
+t := time.Now().Add(time.Minute * 1) 
+fmt.Println("一分钟后的时间：",t)
+ 
+//获取1小时后的时间
+sth,_ := time.ParseDuration("1h")
+fmt.Println("1小时之后的时间：",time.Now().Add(sth))
+ 
+// 获取当前时间2天后的时间
+newTime := time.Now().AddDate(0, 0, 2)
+//newTime 的结果为时间time类型
+ 
+//获取当前时间2月后的时间
+newTime := time.Now().AddDate(0, 2, 0)
+```
+
+### 获取两个时间点的时间差
+
+```go
+
+t1 := time.Now()
+//设置期间经历了50秒时间
+t2 := time.Now().Add(time.Second * 50)
+fmt.Println("t2与t1相差：",t2.Sub(t1))		//t2与t1相差： 50s
+```
+
+## Go继承的方法重写，继承抽象类实现
+
+https://blog.csdn.net/zhbinary/article/details/89418195
+
+## 【Go语言】基本类型排序和 slice 排序
+
+https://itimetraveler.github.io/2016/09/07/%E3%80%90Go%E8%AF%AD%E8%A8%80%E3%80%91%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B%E6%8E%92%E5%BA%8F%E5%92%8C%20slice%20%E6%8E%92%E5%BA%8F/
+
+## [go的异常处理机制](https://segmentfault.com/a/1190000010203475)
+
+https://segmentfault.com/a/1190000010203475
+
+## Golang 推荐的命名规范
+
+https://juejin.cn/post/6844903779175759885
+
 # 加密
 
 GO语言的进阶之路-网络安全之proxyhttps://www.cnblogs.com/yinzhengjie/p/7368030.html（包含des和aes加密）
@@ -528,3 +615,16 @@ https://blog.csdn.net/qq_21514303/article/details/87794750
 ## 装饰器模式
 
 https://cloudsjhan.github.io/2019/11/30/golang%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E8%A3%85%E9%A5%B0%E5%99%A8%E6%A8%A1%E5%BC%8F/
+
+
+
+
+
+# 测试用例
+
+https://books.studygolang.com/The-Golang-Standard-Library-by-Example/chapter09/09.1.html
+
+https://juejin.cn/post/6844903933278683149
+
+
+
