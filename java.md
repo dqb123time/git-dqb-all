@@ -195,6 +195,10 @@ grep java.lang.Thread.State test.txt | awk '{print $2$3$4$5}' | sort | uniq -c
 
 grep java.lang.Thread.State test.txt | awk '{print $2$3$4$5}' | uniq -c
 
+https://blog.csdn.net/supper10090/article/details/78656942  使用jstack查看当前进程全部线程的状态
+
+https://blog.csdn.net/qq_28000789/article/details/86635545?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromBaidu-1.control&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromBaidu-1.control  jstack分析线程等待、死锁问题 
+
 
 
 tomcat:
@@ -203,7 +207,29 @@ tomcat“闪退” 进程终止排查-进程退出、解决方案:
 
 https://blog.csdn.net/hatsune_miku_/article/details/73301921?%3E
 
+#  授权
 
+http://www.361way.com/soft-license/6248.html  软件license模块设计小结
+
+[软件授权的一个简易实现方案](https://www.cnblogs.com/startfromit/archive/2011/04/02/2003915.html)
+
+https://blog.csdn.net/wohaqiyi/article/details/82986646   JAVA项目实现授权 (一)
+
+https://blog.csdn.net/wohaqiyi/article/details/82986967   JAVA项目实现授权 (二)
+
+ https://blog.csdn.net/u013407099/article/details/81271701  springboot实现Web系统License授权认证
+
+
+
+# 问题
+
+https://github.com/auth0/java-jwt/issues/367  java.lang.VerifyError with JWT and Jackson jar包冲突引起
+
+[spring&maven项目代码混淆的经验分享](https://my.oschina.net/passerman/blog/1822421)
+
+**https://www.zhihu.com/question/59855136/answer/1487039124 Java应届生，怎样才能摆脱各类管理系统的开发？**
+
+https://zhuanlan.zhihu.com/p/114376607  @Resource 真的是 byName 吗?  
 
 # 网站
 

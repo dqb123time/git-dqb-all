@@ -1043,3 +1043,11 @@ ftp_proxy=192.168.10.91:3128
 no_proxy="127.0.0.1, localhost, 172.26.*, 172.25.6.66, 192.168.*"
 ```
 
+
+
+
+
+# iptables 防火墙设置
+
+http://blog.chinaunix.net/uid-16946891-id-5123605.html
+
