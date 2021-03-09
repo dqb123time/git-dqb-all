@@ -113,3 +113,22 @@ https://bbs.csdn.net/topics/397175444vmware  vsphere for java 如何获取虚拟
 **https://blog.csdn.net/zhouxukun123/category_6894589.html vSphere Web Services SDK编程指南**
 
 **https://blog.csdn.net/zhouxukun123/article/details/77141923  VMware vSphere Web Services SDK编程指南（七）- 7.5 清单遍历**
+
+
+
+# vmware 虚拟机备份迁移
+
+[VMware 虚拟化编程(1) — VMDK/VDDK/VixDiskLib/VADP 概念简析](http://blog.csdn.net/jmilk/article/details/77927455) 
+[VMware 虚拟化编程(2) — 虚拟磁盘文件类型详解](http://blog.csdn.net/jmilk/article/details/77854924) 
+[VMware 虚拟化编程(3) —VMware vSphere Web Service API 解析](http://blog.csdn.net/jmilk/article/details/78233661) 
+[VMware 虚拟化编程(4) — VDDK 安装](http://blog.csdn.net/jmilk/article/details/78237671) 
+[VMware 虚拟化编程(5) — VixDiskLib 虚拟磁盘库详解之一](http://blog.csdn.net/jmilk/article/details/78238274) 
+[VMware 虚拟化编程(6) — VixDiskLib 虚拟磁盘库详解之二](http://blog.csdn.net/jmilk/article/details/78240024) 
+[VMware 虚拟化编程(7) — VixDiskLib 虚拟磁盘库详解之三](http://blog.csdn.net/jmilk/article/details/78246857) 
+[VMware 虚拟化编程(8) — 多线程中的 VixDiskLib](http://blog.csdn.net/jmilk/article/details/78302280) 
+[VMware 虚拟化编程(9) — VMware 虚拟机的快照](http://blog.csdn.net/jmilk/article/details/78304816) 
+[VMware 虚拟化编程(10) — VMware 数据块修改跟踪技术 CBT](http://blog.csdn.net/Jmilk/article/details/78304869) 
+[VMware 虚拟化编程(11) — VMware 虚拟机的全量备份与增量备份方案](http://blog.csdn.net/jmilk/article/details/78306851) 
+[VMware 虚拟化编程(12) — VixDiskLib Sample 程序使用](http://blog.csdn.net/Jmilk/article/details/78309552)
+
+[VMware 虚拟化编程(13) — VMware 虚拟机的备份方案设计](https://www.cnblogs.com/jmilkfan-fanguiju/p/10589799.html)

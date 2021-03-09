@@ -14,9 +14,17 @@ Constructor >> @Autowired >> @PostConstruct
 
 
 
+**注：子类实例化过程中会调用父类中的@*PostConstruct*方法**
+
+
+
 ### @RequestParam、@QueryParam等Spring常见参数注解区别
 
 https://blog.csdn.net/shipfei_csdn/article/details/103157720
+
+### 不同的包下有文件名相同的java类，spring自动注入会报错
+
+https://blog.csdn.net/u010523770/article/details/51684433
 
 ## 问题
 
@@ -162,6 +170,25 @@ public class ServiceContextUtils implements ApplicationListener<ContextRefreshed
 然后直接调用ServiceContextUtils.redisService即可
 ```
 
+
+
+## springboot
+
+### properties配置
+
+```
+spring.redis.host=${REDIS_HOST:127.0.0.1}
+spring.redis.port=6379
+spring.redis.timeout=30000
+以上表是REDIS_HOST在系统环境变量中获取，如果获取不到默认值为127.0.0.1
+
+spring.application.name=vmware-api-server
+server.port=${PORT:6061}  //指定端口号
+server.servlet.context-path=/vmware/vcenter // 指定url前缀
+```
+
+
+
 # HTTP
 
 ## httpReqeuset
@@ -182,6 +209,8 @@ request.getServletPath()/resources/request.jsp
 
 注： resources为WebContext下的目录名 
    jqueryLearn 为工程名
+
+
 
 # java工具
 
@@ -313,3 +342,6 @@ Java中Set的contains()方法  https://blog.csdn.net/violet_echo_0908/article/de
 
 图说Java —— 理解Java机制最受欢迎的8幅图 https://blog.csdn.net/renfufei/article/details/13594715
 
+
+
+lam
