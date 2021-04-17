@@ -1051,3 +1051,64 @@ no_proxy="127.0.0.1, localhost, 172.26.*, 172.25.6.66, 192.168.*"
 
 http://blog.chinaunix.net/uid-16946891-id-5123605.html
 
+# linux和windows之间拷贝文件出现^Mq奇怪字符
+
+参考：https://blog.csdn.net/lanyang123456/article/details/69049825
+
+这是由于Windows和Linux对回车符定义不同造成的。
+对于回车符的定义：
+
+- Windows：0x0D 0x0A
+- Unix/Linux: 0x0A
+- Mac: 0x0D
+
+解决办法：
+
+linux下执行命令：
+
+```
+$ vim log.txt 
+```
+
+```
+:set fileformat=unix
+:wq
+```
+
+但每次Windows 拷贝到Linux，都会出现这个问题。
+
+一次性解决办法：
+Windows git命令行中使用vim对文件执行以上命令，会有如下提示：
+
+```
+warning: LF will be replaced by CRLF in dark.sh.
+The file will have its original line endings in your working directory.
+```
+
+这样，该文件以后从Windows拷贝到Linux，不会再由字符问题。
+
+## **扩展：**
+
+[DOS和UNIX文本文件之间相互转换的方法](https://www.cnblogs.com/edward2013/p/5301963.html)
+
+[在Vim中查看文件编码和文件编码转换](https://www.jianshu.com/p/36286fa7a9ed)
+
+https://yianwillis.github.io/vimcdoc/doc/options.html vim命令说明
+
+vim查看文件格式：
+
+```
+:set fileformat? 或者 :set ff  或 :setlocal ff
+```
+
+```
+对缓冲区和窗口局部选项而言:
+        命令                全局值             局部值 
+      :set option=value      设置               设置
+ :setlocal option=value       -                 设置
+:setglobal option=value      设置                -
+      :set option?            -                 显示
+ :setlocal option?            -                 显示
+:setglobal option?           显示                -
+```
+
